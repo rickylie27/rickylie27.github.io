@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ricky lie</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="loading">
+            <div id="spinner"></div>
+        </div>
+        <div id="magnify">
+            <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+            <div id="img_here"></div>
+        </div>
+        <header
+            id="header"
+            class="animated slideInDown"
+            style="animation-delay: 1.8s"
+        >
+            <table>
+                <tr>
+                    <td id="logo">ricky lie</td>
+                    <td id="navigation">
+                        <a href="#projects">projects</a>
+                        <a href="#photography">photography</a>
+                        <a href="#contact">contact</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div id="projects">
+            <h1>projects</h1>
+        </div>
+        <div id="videos">
+            <a href="package.html">
+                <img width="100%" src="assets/package/landing-page.jpg" />
+            </a>
+            <a href="advertisement.html">
+                <video
+                    width="100%"
+                    loop
+                    muted
+                    onmouseenter="play($(this).get(0))"
+                    onmouseleave="pause($(this).get(0))"
+                    onmouseout="mouseout($(this).get(0))"
+                >
+                    <source
+                        src="assets/ads/landing-page.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </a>
+            <a href="character.html">
+                <video
+                    width="100%"
+                    loop
+                    muted
+                    onmouseenter="play($(this).get(0))"
+                    onmouseleave="pause($(this).get(0))"
+                    onmouseout="mouseout($(this).get(0))"
+                >
+                    <source
+                        src="assets/character/landing-page.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </a>
+            <a href="garment.html">
+                <img width="100%" src="assets/garment/landing-page.png" />
+            </a>
+        </div>
+        <div id="photography">
+            <h1>photography</h1>
+            <div id="photos">
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-1.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-2.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-3.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-4.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-5.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-6.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-7.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-8.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-9.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-10.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-11.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-12.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-19.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-14.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-15.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-16.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-17.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/photography/photo-18.jpg"
+                />
+            </div>
+        </div>
+        <div id="contact">
+            <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-phone"></i> &nbsp; +62
+                                        878 8571 5726
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-at"></i> &nbsp;
+                                        eillie27@outlook.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div id="address">
+                                            Kembang Abadi 7 Blok A14/14, Puri
+                                            Indah,<br />
+                                            West Jakarta,<br />
+                                            Indonesia
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">© 2026 Ricky Lie</div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>

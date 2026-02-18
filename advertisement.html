@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ricky lie</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="loading">
+            <div id="spinner"></div>
+        </div>
+        <div id="magnify">
+            <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+            <div id="img_here"></div>
+        </div>
+        <header
+            id="header"
+            class="animated slideInDown"
+            style="animation-delay: 1.8s"
+        >
+            <table>
+                <tr>
+                    <td id="logo">
+                        <a href="index.html">
+                            <img src="assets/home-icon.png" />
+                        </a>
+                        <text> &ensp;advertisement </text>
+                    </td>
+                    <td id="navigation">
+                        <a href="#technical">technical</a>
+                        <a href="#keyframe">keyframe</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div id="technical">
+            <p>
+                <text class="project-length">Length of Project&emsp;</text
+                ><text class="project-duration">~ 3 months</text>
+            </p>
+            <p>
+                A cinematic 3D product animation showcasing a functional
+                bio-filtration system, driven almost entirely by procedural
+                generation and physics-based simulations.
+            </p>
+            <h1>Technical</h1>
+            <div class="project-content">
+                <div class="project-left-panel">
+                    <video
+                        ref-id="parametric-model"
+                        width="100%"
+                        loop
+                        muted
+                        controls
+                        disablepictureinpicture
+                        controlslist="nodownload noplaybackrate"
+                        onclick="show($(this))"
+                    >
+                        <source
+                            src="https://dl.dropboxusercontent.com/scl/fi/5534krf2k5jko0qlav7xv/parametric-model.mp4?rlkey=bum41ibdvcwt97pseatf8y3hy&st=d4xesvmo&dl=0"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <video
+                        ref-id="particle-simulation"
+                        width="100%"
+                        loop
+                        muted
+                        controls
+                        disablepictureinpicture
+                        controlslist="nodownload noplaybackrate"
+                        onclick="show($(this))"
+                    >
+                        <source
+                            src="https://dl.dropboxusercontent.com/scl/fi/obfw58ukipi51vm4sa5sb/particle-simulation.mp4?rlkey=5j7qoooz7rkag5mb5euukfv8w&st=m28y6z3a&dl=0"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <video
+                        ref-id="fabric-simulation"
+                        width="100%"
+                        loop
+                        muted
+                        controls
+                        disablepictureinpicture
+                        controlslist="nodownload noplaybackrate"
+                        onclick="show($(this))"
+                    >
+                        <source
+                            src="https://dl.dropboxusercontent.com/scl/fi/oidp7jboaqbhazo2o9q38/fabric-simulation.mp4?rlkey=utfz8nsxa8z30ltoc2x5d4p00&st=ncb9091e&dl=0"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <img src="assets/placeholder.jpeg" height="300" />
+                </div>
+                <div id="project-right-panel">
+                    <div id="parametric-model" class="hidden-display">
+                        <h2>Parametric Modelling</h2>
+                        <p>
+                            Geometries produced by a parametric periodic
+                            function that utilises sinusoidal terms followed by
+                            a combination of affine transformations, duplication
+                            and subdivision.
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/parametric-model-1.png"
+                                class="img-border"
+                                id="parametric-model-1"
+                            />
+                        </div>
+                        <p>
+                            This technique is used to deconstruct and recreate
+                            an actual object into a virtual geometry that is
+                            used in both simulations and renderings.
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/parametric-model-2.jpeg"
+                                class="img-border"
+                                id="parametric-model-2"
+                            />
+                        </div>
+                    </div>
+                    <div id="particle-simulation" class="hidden-display">
+                        <h2>
+                            FLIP - Rigid Body Dynamics - Particle Simulations
+                        </h2>
+                        <p>
+                            Multiple-tier rigid body simulation with movements
+                            dictated by advection to mimic movements in a body
+                            of fluid. Furthermore, a variation of the
+                            constructed advection is used for position-based
+                            geometries deformation (bubbles).
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/particle-simulation-1.png"
+                                class="img-border"
+                                id="particle-simulation-1"
+                            />
+                            <img
+                                src="assets/ads/particle-simulation-2.png"
+                                class="img-border"
+                                id="particle-simulation-2"
+                            />
+                            <img
+                                src="assets/ads/particle-simulation-3.png"
+                                class="img-border"
+                                id="particle-simulation-3"
+                            />
+                        </div>
+                        <p>
+                            High resolution, CPU-based Fluid Implicit Particle
+                            (FLIP) method of fluid simulations that interacts
+                            with rigid body geometries.
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/particle-simulation-4.png"
+                                class="img-border"
+                                id="particle-simulation-4"
+                            />
+                        </div>
+                    </div>
+                    <div id="fabric-simulation" class="hidden-display">
+                        <h2>Fabric Simulation - Geometry and UV Project</h2>
+                        <p>
+                            The constructed geometry is projected onto the XZ
+                            plane and that plane is used as a UV coordinate.
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/fabric-simulation-1.png"
+                                class="img-border"
+                                id="fabric-simulation-1"
+                            />
+                            <img
+                                src="assets/ads/fabric-simulation-2.png"
+                                class="img-border"
+                                id="fabric-simulation-2"
+                            />
+                            <img
+                                src="assets/ads/fabric-simulation-3.png"
+                                class="img-border"
+                                id="fabric-simulation-3"
+                            />
+                        </div>
+                        <p>
+                            An animated geometry (sphere) is used as a collider
+                            to a vellum cloth simulation and we project the
+                            previously obtained plane to attain the final
+                            result.
+                        </p>
+                        <div class="center-content">
+                            <img
+                                src="assets/ads/fabric-simulation-4.png"
+                                class="img-border"
+                                id="fabric-simulation-4"
+                            />
+                            <img
+                                src="assets/ads/fabric-simulation-5.png"
+                                class="img-border"
+                                id="fabric-simulation-5"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="keyframe">
+            <h1>Keyframe</h1>
+            <div id="photos">
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_1.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_2.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_3.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_4.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_5.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_6.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_7.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_8.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_9.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_10.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_11.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_12.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_13.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_14.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_15.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_16.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_17.jpg"
+                />
+                <img
+                    onclick="magnify($(this).attr('src'))"
+                    src="assets/ads/keyframe_18.jpg"
+                />
+            </div>
+        </div>
+        <div id="footer">© 2026 Ricky Lie</div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>
