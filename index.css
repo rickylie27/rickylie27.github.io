@@ -602,6 +602,14 @@ button:focus {
 }
 
 @media (max-width: 1000px) {
+    #technical {
+        padding-top: 25vh;
+    }
+
+    #project-right-panel {
+        font-size: small;
+    }
+
     #photos {
         columns: 1;
         column-gap: 0%;
