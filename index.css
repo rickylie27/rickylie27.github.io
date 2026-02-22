@@ -475,12 +475,32 @@ video::-webkit-media-controls-mute-button {
     width: 92vw;
     padding: 6vh 4vw;
     font-weight: bold;
+    flex-direction: column;
+    display: flex;
 }
 
 #bio h1 {
     padding: 5px 0px;
     border-bottom: 4px solid rgb(6, 220, 248);
     width: 8%;
+}
+
+#bio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#bio-left {
+    display: flex;
+    justify-content: center;
+}
+
+#bio-left img {
+    width: 500px;
+}
+
+#bio-right {
+    padding-left: 5vw;
 }
 
 #contact {
@@ -685,6 +705,10 @@ button:focus {
         width: 90%;
     }
 
+    #projects {
+        padding-top: 25vh;
+    }
+
     #projects h1 {
         width: 19%;
     }
@@ -695,6 +719,15 @@ button:focus {
 
     #bio h1 {
         width: 25%;
+    }
+
+    #bio-content {
+        flex-direction: column;
+    }
+
+    #bio-right {
+        padding-left: 0vw;
+        padding-top: 5vh;
     }
 
     #contact h1 {
